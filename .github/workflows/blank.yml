@@ -16,10 +16,9 @@ jobs:
           headless: true
           
       - name: Generate Allure report
-              uses: QuintilianoNery/action-allure-report-V2@0.2.0
-              if: always()
-              
-
+        if: always()
+        uses: QuintilianoNery/action-allure-report-V2@0.2.0
+            
       - name: Commit report results
         if: always()
         run: |
