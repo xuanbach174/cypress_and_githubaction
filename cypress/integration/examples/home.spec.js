@@ -1,7 +1,7 @@
 
 describe('My First Test', () => {
     it('Does not do much!', () => {
-      cy.visit('https://www.nopcommerce.com/en/demo');
+      cy.visit('https://www.nopcommerce.com/en/demo11');
       cy.title().should('eq','Store Demo - nopCommerce');
       console.log('123');
     })
