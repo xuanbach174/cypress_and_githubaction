@@ -9,6 +9,8 @@ jobs:
   cypress-run:
     runs-on: ubuntu-20.04
     steps:
+      - uses: actions/checkout@v2
+
       - name: Get Allure history
         uses: actions/checkout@v2
         if: always()
