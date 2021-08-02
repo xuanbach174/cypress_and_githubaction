@@ -1,0 +1,82 @@
+{
+  "uid" : "26fc7cc74f6f0c27",
+  "name" : "Does not do much!222222222",
+  "fullName" : "Does not do much!222222222",
+  "historyId" : "8882e20cbb1c440fd498b3b4f8ba6518",
+  "time" : {
+    "start" : 1627873972524,
+    "stop" : 1627873974464,
+    "duration" : 1940
+  },
+  "status" : "failed",
+  "statusMessage" : "`cy.visit()` failed trying to load:\n\nhttps://www.nopcommerce.com/en/demo11\n\nThe response we received from your web server was:\n\n  > 404: Not Found\n\nThis was considered a failure because the status code was not `2xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`",
+  "statusTrace" : "CypressError: `cy.visit()` failed trying to load:\n\nhttps://www.nopcommerce.com/en/demo11\n\nThe response we received from your web server was:\n\n  > 404: Not Found\n\nThis was considered a failure because the status code was not `2xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n    at http://localhost:63127/__cypress/runner/cypress_runner.js:158226:25\n    at visitFailedByErr (http://localhost:63127/__cypress/runner/cypress_runner.js:157602:12)\n    at http://localhost:63127/__cypress/runner/cypress_runner.js:158206:13\n    at tryCatcher (http://localhost:63127/__cypress/runner/cypress_runner.js:10609:23)\n    at Promise._settlePromiseFromHandler (http://localhost:63127/__cypress/runner/cypress_runner.js:8544:31)\n    at Promise._settlePromise (http://localhost:63127/__cypress/runner/cypress_runner.js:8601:18)\n    at Promise._settlePromise0 (http://localhost:63127/__cypress/runner/cypress_runner.js:8646:10)\n    at Promise._settlePromises (http://localhost:63127/__cypress/runner/cypress_runner.js:8722:18)\n    at _drainQueueStep (http://localhost:63127/__cypress/runner/cypress_runner.js:5316:12)\n    at _drainQueue (http://localhost:63127/__cypress/runner/cypress_runner.js:5309:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:63127/__cypress/runner/cypress_runner.js:5325:5)\n    at Async.drainQueues (http://localhost:63127/__cypress/runner/cypress_runner.js:5195:14)\nFrom Your Spec Code:\n    at Context.eval (http://localhost:63127/__cypress/tests?p=cypress\\integration\\examples\\home.spec.js:106:8)",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "`cy.visit()` failed trying to load:\n\nhttps://www.nopcommerce.com/en/demo11\n\nThe response we received from your web server was:\n\n  > 404: Not Found\n\nThis was considered a failure because the status code was not `2xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`",
+    "statusTrace" : "CypressError: `cy.visit()` failed trying to load:\n\nhttps://www.nopcommerce.com/en/demo11\n\nThe response we received from your web server was:\n\n  > 404: Not Found\n\nThis was considered a failure because the status code was not `2xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n    at http://localhost:63127/__cypress/runner/cypress_runner.js:158226:25\n    at visitFailedByErr (http://localhost:63127/__cypress/runner/cypress_runner.js:157602:12)\n    at http://localhost:63127/__cypress/runner/cypress_runner.js:158206:13\n    at tryCatcher (http://localhost:63127/__cypress/runner/cypress_runner.js:10609:23)\n    at Promise._settlePromiseFromHandler (http://localhost:63127/__cypress/runner/cypress_runner.js:8544:31)\n    at Promise._settlePromise (http://localhost:63127/__cypress/runner/cypress_runner.js:8601:18)\n    at Promise._settlePromise0 (http://localhost:63127/__cypress/runner/cypress_runner.js:8646:10)\n    at Promise._settlePromises (http://localhost:63127/__cypress/runner/cypress_runner.js:8722:18)\n    at _drainQueueStep (http://localhost:63127/__cypress/runner/cypress_runner.js:5316:12)\n    at _drainQueue (http://localhost:63127/__cypress/runner/cypress_runner.js:5309:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:63127/__cypress/runner/cypress_runner.js:5325:5)\n    at Async.drainQueues (http://localhost:63127/__cypress/runner/cypress_runner.js:5195:14)\nFrom Your Spec Code:\n    at Context.eval (http://localhost:63127/__cypress/tests?p=cypress\\integration\\examples\\home.spec.js:106:8)",
+    "steps" : [ {
+      "name" : "visit (\"https://www.nopcommerce.com/en/demo11\")",
+      "time" : {
+        "start" : 1627873972539,
+        "stop" : 1627873974464,
+        "duration" : 1925
+      },
+      "status" : "failed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "name" : "examples\\home.spec.js.mp4",
+      "type" : "video/mp4",
+      "size" : 0
+    }, {
+      "uid" : "91662d63597cf1ef",
+      "name" : "examples\\home.spec.js:2021-08-02T03:12:53.920Z",
+      "source" : "91662d63597cf1ef.png",
+      "type" : "image/png",
+      "size" : 74554
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "My First Test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "26fc7cc74f6f0c27.json",
+  "parameterValues" : [ ]
+}
