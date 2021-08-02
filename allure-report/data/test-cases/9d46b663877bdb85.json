@@ -1,5 +1,5 @@
 {
-  "uid" : "297e78cb15c6adf4",
+  "uid" : "9d46b663877bdb85",
   "name" : "Does not do much!222222222",
   "fullName" : "Does not do much!222222222",
   "historyId" : "8882e20cbb1c440fd498b3b4f8ba6518",
@@ -30,28 +30,26 @@
       "attachments" : [ ],
       "parameters" : [ ],
       "stepsCount" : 0,
-      "hasContent" : false,
       "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
     } ],
     "attachments" : [ {
-      "uid" : "54b15379380a245f",
       "name" : "examples\\home.spec.js.mp4",
-      "source" : "54b15379380a245f.mp4",
       "type" : "video/mp4",
-      "size" : 130454
+      "size" : 0
     }, {
-      "uid" : "a9bd7e17163fcbcc",
+      "uid" : "1a704475d6722f1a",
       "name" : "examples\\home.spec.js:2021-08-02T03:17:23.488Z",
-      "source" : "a9bd7e17163fcbcc.png",
+      "source" : "1a704475d6722f1a.png",
       "type" : "image/png",
       "size" : 74712
     } ],
     "parameters" : [ ],
     "stepsCount" : 1,
-    "hasContent" : true,
     "attachmentsCount" : 2,
-    "shouldDisplayMessage" : true
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
   },
   "afterStages" : [ {
     "time" : { },
@@ -60,9 +58,9 @@
     "attachments" : [ ],
     "parameters" : [ ],
     "stepsCount" : 0,
-    "hasContent" : false,
     "attachmentsCount" : 0,
-    "shouldDisplayMessage" : false
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
   } ],
   "labels" : [ {
     "name" : "suite",
@@ -78,7 +76,7 @@
   "extra" : {
     "severity" : "normal",
     "retries" : [ {
-      "uid" : "37b70d564566bbf7",
+      "uid" : "60d03c33befcd4d6",
       "status" : "failed",
       "statusDetails" : "`cy.visit()` failed trying to load:\n\nhttps://www.nopcommerce.com/en/demo11\n\nThe response we received from your web server was:\n\n  > 404: Not Found\n\nThis was considered a failure because the status code was not `2xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`",
       "time" : {
@@ -94,6 +92,6 @@
     } ],
     "tags" : [ ]
   },
-  "source" : "297e78cb15c6adf4.json",
+  "source" : "9d46b663877bdb85.json",
   "parameterValues" : [ ]
 }

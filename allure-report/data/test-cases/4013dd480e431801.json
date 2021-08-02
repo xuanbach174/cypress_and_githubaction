@@ -1,5 +1,5 @@
 {
-  "uid" : "734e1bc6d0548d29",
+  "uid" : "4013dd480e431801",
   "name" : "Does not do much!3333",
   "fullName" : "Does not do much!3333",
   "historyId" : "0042ebff2c866553f7286c17845e059c",
@@ -30,28 +30,26 @@
       "attachments" : [ ],
       "parameters" : [ ],
       "stepsCount" : 0,
-      "hasContent" : false,
       "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
     } ],
     "attachments" : [ {
-      "uid" : "54b15379380a245f",
       "name" : "examples\\home.spec.js.mp4",
-      "source" : "54b15379380a245f.mp4",
       "type" : "video/mp4",
-      "size" : 130454
+      "size" : 0
     }, {
-      "uid" : "26931da934efe7d2",
+      "uid" : "f442b44cdd99e4e",
       "name" : "examples\\home.spec.js:2021-08-02T03:17:25.105Z",
-      "source" : "26931da934efe7d2.png",
+      "source" : "f442b44cdd99e4e.png",
       "type" : "image/png",
       "size" : 73688
     } ],
     "parameters" : [ ],
     "stepsCount" : 1,
-    "hasContent" : true,
     "attachmentsCount" : 2,
-    "shouldDisplayMessage" : true
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
   },
   "afterStages" : [ {
     "time" : { },
@@ -60,9 +58,9 @@
     "attachments" : [ ],
     "parameters" : [ ],
     "stepsCount" : 0,
-    "hasContent" : false,
     "attachmentsCount" : 0,
-    "shouldDisplayMessage" : false
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
   } ],
   "labels" : [ {
     "name" : "suite",
@@ -78,7 +76,7 @@
   "extra" : {
     "severity" : "normal",
     "retries" : [ {
-      "uid" : "cea97c2d617ac575",
+      "uid" : "3a4064afa8ed5760",
       "status" : "failed",
       "statusDetails" : "`cy.visit()` failed trying to load:\n\nhttps://www.nopcommerce.com/en/demo11\n\nThe response we received from your web server was:\n\n  > 404: Not Found\n\nThis was considered a failure because the status code was not `2xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`",
       "time" : {
@@ -94,6 +92,6 @@
     } ],
     "tags" : [ ]
   },
-  "source" : "734e1bc6d0548d29.json",
+  "source" : "4013dd480e431801.json",
   "parameterValues" : [ ]
 }

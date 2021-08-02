@@ -1,11 +1,10 @@
 {
   "uid" : "98d3104e051c652961429bf95fa0b5d6",
-  "name" : "suites",
   "children" : [ {
     "name" : "My First Test",
     "children" : [ {
       "name" : "Does not do much!1111",
-      "uid" : "965eac752822eb27",
+      "uid" : "a38b33ea1eacc541",
       "parentUid" : "e34bcb469eaec599ffd4e8c4fdd353e9",
       "status" : "failed",
       "time" : {
@@ -18,7 +17,7 @@
       "parameters" : [ ]
     }, {
       "name" : "Does not do much!222222222",
-      "uid" : "297e78cb15c6adf4",
+      "uid" : "9d46b663877bdb85",
       "parentUid" : "e34bcb469eaec599ffd4e8c4fdd353e9",
       "status" : "failed",
       "time" : {
@@ -31,7 +30,7 @@
       "parameters" : [ ]
     }, {
       "name" : "Does not do much!3333",
-      "uid" : "734e1bc6d0548d29",
+      "uid" : "4013dd480e431801",
       "parentUid" : "e34bcb469eaec599ffd4e8c4fdd353e9",
       "status" : "failed",
       "time" : {
@@ -44,5 +43,6 @@
       "parameters" : [ ]
     } ],
     "uid" : "e34bcb469eaec599ffd4e8c4fdd353e9"
-  } ]
+  } ],
+  "name" : "suites"
 }

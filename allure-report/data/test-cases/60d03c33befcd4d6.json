@@ -1,5 +1,5 @@
 {
-  "uid" : "37b70d564566bbf7",
+  "uid" : "60d03c33befcd4d6",
   "name" : "Does not do much!222222222",
   "fullName" : "Does not do much!222222222",
   "historyId" : "8882e20cbb1c440fd498b3b4f8ba6518",
@@ -30,28 +30,26 @@
       "attachments" : [ ],
       "parameters" : [ ],
       "stepsCount" : 0,
-      "hasContent" : false,
       "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
     } ],
     "attachments" : [ {
-      "uid" : "54b15379380a245f",
       "name" : "examples\\home.spec.js.mp4",
-      "source" : "54b15379380a245f.mp4",
       "type" : "video/mp4",
-      "size" : 130454
+      "size" : 0
     }, {
-      "uid" : "7265ebe3636f702d",
+      "uid" : "6e81162fb19cd64",
       "name" : "examples\\home.spec.js:2021-08-02T03:12:53.920Z",
-      "source" : "7265ebe3636f702d.png",
+      "source" : "6e81162fb19cd64.png",
       "type" : "image/png",
       "size" : 74554
     } ],
     "parameters" : [ ],
     "stepsCount" : 1,
-    "hasContent" : true,
     "attachmentsCount" : 2,
-    "shouldDisplayMessage" : true
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
   },
   "afterStages" : [ {
     "time" : { },
@@ -60,9 +58,9 @@
     "attachments" : [ ],
     "parameters" : [ ],
     "stepsCount" : 0,
-    "hasContent" : false,
     "attachmentsCount" : 0,
-    "shouldDisplayMessage" : false
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
   } ],
   "labels" : [ {
     "name" : "suite",
@@ -79,6 +77,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "37b70d564566bbf7.json",
+  "source" : "60d03c33befcd4d6.json",
   "parameterValues" : [ ]
 }
