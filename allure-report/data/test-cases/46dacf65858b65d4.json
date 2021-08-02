@@ -1,5 +1,5 @@
 {
-  "uid" : "a38b33ea1eacc541",
+  "uid" : "46dacf65858b65d4",
   "name" : "Does not do much!1111",
   "fullName" : "Does not do much!1111",
   "historyId" : "ca96661b84d69a2b7808d82ebe670ad4",
@@ -39,9 +39,9 @@
       "type" : "video/mp4",
       "size" : 0
     }, {
-      "uid" : "a627b152ced7079d",
+      "uid" : "8f72f7bc7a12fc87",
       "name" : "examples\\home.spec.js:2021-08-02T03:17:21.600Z",
-      "source" : "a627b152ced7079d.png",
+      "source" : "8f72f7bc7a12fc87.png",
       "type" : "image/png",
       "size" : 44362
     } ],
@@ -76,7 +76,7 @@
   "extra" : {
     "severity" : "normal",
     "retries" : [ {
-      "uid" : "5d2111e618a084c3",
+      "uid" : "ad9c2d4a5518292f",
       "status" : "failed",
       "statusDetails" : "`cy.visit()` failed trying to load:\n\nhttps://www.nopcommerce.com/en/demo11\n\nThe response we received from your web server was:\n\n  > 404: Not Found\n\nThis was considered a failure because the status code was not `2xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`",
       "time" : {
@@ -92,6 +92,6 @@
     } ],
     "tags" : [ ]
   },
-  "source" : "a38b33ea1eacc541.json",
+  "source" : "46dacf65858b65d4.json",
   "parameterValues" : [ ]
 }
