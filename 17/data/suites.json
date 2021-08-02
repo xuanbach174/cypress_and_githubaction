@@ -1,0 +1,48 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "children" : [ {
+    "name" : "My First Test",
+    "children" : [ {
+      "name" : "Does not do much!1111",
+      "uid" : "d251c2587566a2b9",
+      "parentUid" : "e34bcb469eaec599ffd4e8c4fdd353e9",
+      "status" : "failed",
+      "time" : {
+        "start" : 1627874240036,
+        "stop" : 1627874242129,
+        "duration" : 2093
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Does not do much!222222222",
+      "uid" : "1f69d9dd633387fd",
+      "parentUid" : "e34bcb469eaec599ffd4e8c4fdd353e9",
+      "status" : "failed",
+      "time" : {
+        "start" : 1627874242163,
+        "stop" : 1627874243792,
+        "duration" : 1629
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Does not do much!3333",
+      "uid" : "59903f0926ed6c36",
+      "parentUid" : "e34bcb469eaec599ffd4e8c4fdd353e9",
+      "status" : "failed",
+      "time" : {
+        "start" : 1627874243799,
+        "stop" : 1627874245456,
+        "duration" : 1657
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "e34bcb469eaec599ffd4e8c4fdd353e9"
+  } ],
+  "name" : "suites"
+}
