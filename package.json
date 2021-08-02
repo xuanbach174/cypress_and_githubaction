@@ -4,9 +4,14 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
-    "cypress": "^6.4.0"
+    "@babel/preset-env": "^7.14.9",
+    "allure-commandline": "^2.13.8",
+    "babel-loader": "^8.2.2",
+    "cypress": "^6.4.0",
+    "webpack": "^5.47.1"
   },
   "devDependencies": {
+    "@shelex/cypress-allure-plugin": "^2.8.6",
     "eslint": "^7.19.0",
     "eslint-plugin-cypress": "^2.11.2",
     "jest": "^26.6.3"

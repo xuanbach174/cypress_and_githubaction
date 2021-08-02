@@ -1,5 +1,52 @@
 {
   "uid" : "4b4757e66a1912dae1a509f688f20b0f",
-  "children" : [ ],
-  "name" : "categories"
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "`cy.visit()` failed trying to load:\n\nhttps://www.nopcommerce.com/en/demo11\n\nThe response we received from your web server was:\n\n  > 404: Not Found\n\nThis was considered a failure because the status code was not `2xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`",
+      "children" : [ {
+        "name" : "Does not do much!1111",
+        "uid" : "965eac752822eb27",
+        "parentUid" : "491471113b086b6346b3ca8089deccb5",
+        "status" : "failed",
+        "time" : {
+          "start" : 1627874240036,
+          "stop" : 1627874242129,
+          "duration" : 2093
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Does not do much!222222222",
+        "uid" : "297e78cb15c6adf4",
+        "parentUid" : "491471113b086b6346b3ca8089deccb5",
+        "status" : "failed",
+        "time" : {
+          "start" : 1627874242163,
+          "stop" : 1627874243792,
+          "duration" : 1629
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Does not do much!3333",
+        "uid" : "734e1bc6d0548d29",
+        "parentUid" : "491471113b086b6346b3ca8089deccb5",
+        "status" : "failed",
+        "time" : {
+          "start" : 1627874243799,
+          "stop" : 1627874245456,
+          "duration" : 1657
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "491471113b086b6346b3ca8089deccb5"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ]
 }

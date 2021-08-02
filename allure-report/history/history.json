@@ -1,1 +1,62 @@
-{ }
+{
+  "8882e20cbb1c440fd498b3b4f8ba6518" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "297e78cb15c6adf4",
+      "status" : "failed",
+      "statusDetails" : "`cy.visit()` failed trying to load:\n\nhttps://www.nopcommerce.com/en/demo11\n\nThe response we received from your web server was:\n\n  > 404: Not Found\n\nThis was considered a failure because the status code was not `2xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`",
+      "time" : {
+        "start" : 1627874242163,
+        "stop" : 1627874243792,
+        "duration" : 1629
+      }
+    } ]
+  },
+  "ca96661b84d69a2b7808d82ebe670ad4" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "965eac752822eb27",
+      "status" : "failed",
+      "statusDetails" : "`cy.visit()` failed trying to load:\n\nhttps://www.nopcommerce.com/en/demo11\n\nThe response we received from your web server was:\n\n  > 404: Not Found\n\nThis was considered a failure because the status code was not `2xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`",
+      "time" : {
+        "start" : 1627874240036,
+        "stop" : 1627874242129,
+        "duration" : 2093
+      }
+    } ]
+  },
+  "0042ebff2c866553f7286c17845e059c" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "734e1bc6d0548d29",
+      "status" : "failed",
+      "statusDetails" : "`cy.visit()` failed trying to load:\n\nhttps://www.nopcommerce.com/en/demo11\n\nThe response we received from your web server was:\n\n  > 404: Not Found\n\nThis was considered a failure because the status code was not `2xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`",
+      "time" : {
+        "start" : 1627874243799,
+        "stop" : 1627874245456,
+        "duration" : 1657
+      }
+    } ]
+  }
+}
