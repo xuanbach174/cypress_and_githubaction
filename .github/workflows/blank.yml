@@ -11,16 +11,16 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
+      - uses: cypress-io/github-action@v2
+        with:
+          browser: chrome
+          headless: true
+
       - name: Prepare Allure history
         run: |
             rm -r allure-results/*
             cp -r ./allure-report/history ./allure-results/history
             rm -r allure-report/*
-
-      - uses: cypress-io/github-action@v2
-        with:
-          browser: chrome
-          headless: true
 
       - name: Generate Allure report
         if: always()
@@ -41,4 +41,9 @@ jobs:
         with:
             github_token: '${{ secrets.GITHUB_TOKEN }}'
             force: true
-      
+            
+      - name: Deploy report page to GitHub Page
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
