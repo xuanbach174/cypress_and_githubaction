@@ -1,5 +1,6 @@
 {
     "env": {
         "allureResultsPath": "allure-results"
-    }
+    },
+    "projectId": "2vmuwo"
 }
