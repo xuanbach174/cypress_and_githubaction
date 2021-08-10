@@ -1,0 +1,104 @@
+{
+  "uid" : "d60b7455f373174f",
+  "name" : "Does not do much!1111",
+  "fullName" : "Does not do much!1111",
+  "historyId" : "ca96661b84d69a2b7808d82ebe670ad4",
+  "time" : {
+    "start" : 1628595149869,
+    "stop" : 1628595154060,
+    "duration" : 4191
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "visit (\"https://web.staging.verbdata.app/#/login111\")",
+      "time" : {
+        "start" : 1628595149900,
+        "stop" : 1628595154041,
+        "duration" : 4141
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "title",
+      "time" : {
+        "start" : 1628595154041,
+        "stop" : 1628595154059,
+        "duration" : 18
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "expected **Verb** to equal **Verb** assert",
+      "time" : {
+        "start" : 1628595154058,
+        "stop" : 1628595154058,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "b86b808fc1149720",
+      "name" : "examples\\home.spec.js.mp4",
+      "source" : "b86b808fc1149720.mp4",
+      "type" : "video/mp4",
+      "size" : 227083
+    } ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1,
+    "stepsCount" : 3,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "My First Test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "d60b7455f373174f.json",
+  "parameterValues" : [ ]
+}

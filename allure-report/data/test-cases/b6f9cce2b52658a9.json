@@ -1,0 +1,161 @@
+{
+  "uid" : "b6f9cce2b52658a9",
+  "name" : "Does not do much!1111",
+  "fullName" : "Does not do much!1111",
+  "historyId" : "ca96661b84d69a2b7808d82ebe670ad4",
+  "time" : {
+    "start" : 1628595412403,
+    "stop" : 1628595424187,
+    "duration" : 11784
+  },
+  "status" : "failed",
+  "statusMessage" : "Timed out retrying after 4000ms: expected 'Verb' to equal 'Verb1111'",
+  "statusTrace" : "AssertionError: Timed out retrying after 4000ms: expected 'Verb' to equal 'Verb1111'\n    at Context.eval (https://web.staging.verbdata.app/__cypress/tests?p=cypress\\integration\\examples\\home.spec.js:102:16)",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "Timed out retrying after 4000ms: expected 'Verb' to equal 'Verb1111'",
+    "statusTrace" : "AssertionError: Timed out retrying after 4000ms: expected 'Verb' to equal 'Verb1111'\n    at Context.eval (https://web.staging.verbdata.app/__cypress/tests?p=cypress\\integration\\examples\\home.spec.js:102:16)",
+    "steps" : [ {
+      "name" : "visit (\"https://web.staging.verbdata.app\")",
+      "time" : {
+        "start" : 1628595412418,
+        "stop" : 1628595419822,
+        "duration" : 7404
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "title",
+      "time" : {
+        "start" : 1628595419822,
+        "stop" : 1628595424186,
+        "duration" : 4364
+      },
+      "status" : "failed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "expected **Verb** to equal **Verb1111** assert",
+      "time" : {
+        "start" : 1628595424186,
+        "stop" : 1628595424186,
+        "duration" : 0
+      },
+      "status" : "failed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "b86b808fc1149720",
+      "name" : "examples\\home.spec.js.mp4",
+      "source" : "b86b808fc1149720.mp4",
+      "type" : "video/mp4",
+      "size" : 227083
+    }, {
+      "uid" : "69162f2e9340c49e",
+      "name" : "examples\\home.spec.js:2021-08-10T11:37:03.849Z",
+      "source" : "69162f2e9340c49e.png",
+      "type" : "image/png",
+      "size" : 117144
+    } ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : true,
+    "attachmentsCount" : 2,
+    "stepsCount" : 3,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "My First Test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "29d77c26b52693d9",
+      "status" : "skipped",
+      "statusDetails" : "Test ignored",
+      "time" : {
+        "start" : 1628595326237,
+        "stop" : 1628595326238,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "d60b7455f373174f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1628595149869,
+        "stop" : 1628595154060,
+        "duration" : 4191
+      }
+    }, {
+      "uid" : "3a0ff49f4011fdd3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1628595104611,
+        "stop" : 1628595108339,
+        "duration" : 3728
+      }
+    }, {
+      "uid" : "c568169eb6f46bc9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1628595051956,
+        "stop" : 1628595056360,
+        "duration" : 4404
+      }
+    }, {
+      "uid" : "8026e176bc27acbc",
+      "status" : "passed",
+      "time" : {
+        "start" : 1628594020302,
+        "stop" : 1628594025511,
+        "duration" : 5209
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "b6f9cce2b52658a9.json",
+  "parameterValues" : [ ]
+}

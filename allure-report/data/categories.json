@@ -1,5 +1,26 @@
 {
   "uid" : "4b4757e66a1912dae1a509f688f20b0f",
-  "children" : [ ],
-  "name" : "categories"
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "Timed out retrying after 4000ms: expected 'Verb' to equal 'Verb1111'",
+      "children" : [ {
+        "name" : "Does not do much!1111",
+        "uid" : "b6f9cce2b52658a9",
+        "parentUid" : "a60efffb917ae6aaba7e035315cda399",
+        "status" : "failed",
+        "time" : {
+          "start" : 1628595412403,
+          "stop" : 1628595424187,
+          "duration" : 11784
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "a60efffb917ae6aaba7e035315cda399"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ]
 }

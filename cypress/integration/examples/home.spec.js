@@ -1,8 +1,8 @@
 
 describe('My First Test', () => {
     it('Does not do much!1111', () => {
-      cy.visit('https://web.staging.verbdata.app/#/login');
-      cy.title().should('eq','Verb');
+      cy.visit('https://web.staging.verbdata.app');
+      cy.title().should('eq','Verb1111');
       
     })
 
