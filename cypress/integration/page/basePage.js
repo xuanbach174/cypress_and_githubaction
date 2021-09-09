@@ -19,16 +19,19 @@ class BasePage {
     }
 
     sendKeyLocatorInIframe(iframe, locator, key){
-      // cy
-      // .get(iframe)
-      // .should(iframe => expect(iframe.contents().find('body').to.exist)
-      // .then(iframe => cy.wrap(iframe.contents().find('body')))
-      // .within({}, $iframe => {
-      //   cy.get(locator).type(key)
-      // }))
-      var iframe = document.getElementById(iframe);
-      var elmnt = iframe.contentWindow.document.get(locator);
-      elmnt.type(key)
+      // cy.get(iframe).then($a =>{
+      //   cy.log($a.contents())
+      // })
+      cy
+      .get(iframe)
+      .should(iframe => expect(iframe.contents().find('body').to.exist)
+      .then(iframe => cy.wrap(iframe.contents().find('body')))
+      .within({}, $iframe => {
+        cy.get(locator).type(key)
+      }))
+      // var iframe = document.getElementById(iframe);
+      // var elmnt = iframe.contentWindow.document.get(locator);
+      // elmnt.type(key)
   }
   
     verifyIncludeUrl(url) {

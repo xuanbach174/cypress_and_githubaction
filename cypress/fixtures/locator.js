@@ -27,7 +27,7 @@ class locator {
     static phoneNumberField ="input[placeholder='Phone Number']"
     static nameOnCardField =".payment-method > :nth-child(2) > .label-input > input"
     static cardNumberIframe = "#card-number iframe"
-    static creditCardNumber = "input[name='cardnumber']"
+    static creditCardNumber = "#card-number input[class='__PrivateStripeElement-input']"
     static cvvField = "#card-cvv input"
     static expiryField = '#card-expiry input'
     static postalCodeField = ":nth-child(2) > .basic-input-3fv input"

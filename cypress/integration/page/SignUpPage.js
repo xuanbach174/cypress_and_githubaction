@@ -1,4 +1,4 @@
-import BasePage from "./BasePage";
+import BasePage from "./basePage";
 import locator from "../../fixtures/locator"
 import contanst from "../../fixtures/contanst.json"
 
@@ -101,7 +101,7 @@ class SignUpPage extends BasePage {
     }
     
     fillInCreditCardNumberField(){
-        this.sendKeyLocatorInIframe(locator.cardNumberIframe,
+        this.sendKeyLocator(
             locator.creditCardNumber,parseInt(contanst.creditCardNumber))
     }
 
