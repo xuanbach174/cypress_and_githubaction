@@ -1,6 +1,7 @@
 {
     "env": {
-        "allureResultsPath": "allure-results"
+        "allureResultsPath": "allure-results",
+        "chromeWebSecurity": false
     },
     "projectId": "2vmuwo"
 }
