@@ -101,7 +101,7 @@ class SignUpPage extends BasePage {
     }
     
     fillInCreditCardNumberField(){
-        this.sendKeyLocator(
+        this.sendKeyIframeLocator(
             locator.creditCardNumber,parseInt(contanst.creditCardNumber))
     }
 

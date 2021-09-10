@@ -13,7 +13,6 @@ beforeEach(() => {
 
 describe("Sign up ", () => {
     const signUpPage = new SignUpPage();
-  
     //--------------------------------------------------------------------------------------
     specify("Sign up startup with API", () => {
       signUpPage.clickStartUpPlan();

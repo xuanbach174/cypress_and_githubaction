@@ -1,3 +1,6 @@
+// /// <reference types = "Cypress-iframe"/>
+// import 'cypress-iframe'
+
 Cypress.on("uncaught:exception", (err, runnable) => {
     return false;
   });
@@ -11,7 +14,19 @@ class BasePage {
     sendKeyLocator(elementLocator, key) {
       cy.get(elementLocator).clear({force: true}).type(key, { force: true });
     }
+
+
+    sendKeyIframeLocator(elementLocator,key){
+      cy.get("#card-number > div > iframe").then($iframe => {
+
+        const iframe = $iframe.contents();
+        const myInput = iframe.find('#root > form > span:nth-child(4) > div > div.CardNumberField-input-wrapper > span > input')
+        cy.wrap(myInput).type("99999999",{force: true});
+      });
+    }
   
+
+
     uploadFile(elementLocator, fileToUpload) {
       cy.get(elementLocator).attachFile(fileToUpload, {
         subjectType: "drag-n-drop",
