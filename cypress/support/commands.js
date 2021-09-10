@@ -24,80 +24,40 @@
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite("visit", (originalFn, url, options) => { ... })
 
-import 'cypress-iframe'
-
-
-Cypress.Commands.add("iframe", { prevSubject: "element" }, $iframe => {
+  Cypress.Commands.add('iframe', { prevSubject: 'element' }, ($iframe, selector) => {
     Cypress.log({
-      name: "iframe",
+      name: 'iframe',
       consoleProps() {
         return {
           iframe: $iframe,
         };
       },
     });
-  
     return new Cypress.Promise(resolve => {
-      onIframeReady(
-        $iframe,
-        () => {
-          resolve($iframe.contents().find("body"));
-        },
-        () => {
-          $iframe.on("load", () => {
-            resolve($iframe.contents().find("body"));
-          });
-        }
-      );
+      resolve($iframe.contents().find(selector));
     });
   });
-  
-  function onIframeReady($iframe, successFn, errorFn) {
-    try {
-      const iCon = $iframe.first()[0].contentWindow,
-        bl = "about:blank",
-        compl = "complete";
-      const callCallback = () => {
-        try {
-          const $con = $iframe.contents();
-          if ($con.length === 0) {
-            // https://git.io/vV8yU
-            throw new Error("iframe inaccessible");
-          }
-          successFn($con);
-        } catch (e) {
-          // accessing contents failed
-          errorFn();
-        }
-      };
-  
-      const observeOnload = () => {
-        $iframe.on("load.jqueryMark", () => {
-          try {
-            const src = $iframe.attr("src").trim(),
-              href = iCon.location.href;
-            if (href !== bl || src === bl || src === "") {
-              $iframe.off("load.jqueryMark");
-              callCallback();
-            }
-          } catch (e) {
-            errorFn();
-          }
-        });
-      };
-      if (iCon.document.readyState === compl) {
-        const src = $iframe.attr("src").trim(),
-          href = iCon.location.href;
-        if (href === bl && src !== bl && src !== "") {
-          observeOnload();
+
+  Cypress.Commands.add(
+    'iframeLoaded',
+    { prevSubject: 'element' },
+    ($iframe) => {
+      const contentWindow = $iframe.prop('contentWindow')
+      return new Promise(resolve => {
+        if (
+          contentWindow &&
+          contentWindow.document.readyState === 'complete'
+        ) {
+          resolve(contentWindow)
         } else {
-          callCallback();
+          $iframe.on('load', () => {
+            resolve(contentWindow)
+          })
         }
-      } else {
-        observeOnload();
-      }
-    } catch (e) {
-      // accessing contentWindow failed
-      errorFn();
-    }
-  }
+      })
+    })
+  Cypress.Commands.add(
+    'getInDocument',
+    { prevSubject: 'document' },
+    (document, selector) => Cypress.$(selector, document)
+  )

@@ -3,10 +3,10 @@
     "emailAddress": "nghiada97",
     "password": "QuangAnh12!",
 
-    "URLCreateYourAccount": "/#/signup?plan=startup",
+    "CreateYourAccount": "Create your account",
     "URLCreateYourOranigation": "/#/billing?plan=startup",
 
-    "planBillingTitle": "Startup plan billing",
+    "planBillingTitle": "plan billing",
     "organizationTitle": "Create your organization",
     "paymentMethodTitle": "Add payment method",
 
