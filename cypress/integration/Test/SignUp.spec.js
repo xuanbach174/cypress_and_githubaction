@@ -15,7 +15,7 @@ describe("Sign up ", () => {
     const signUpPage = new SignUpPage();
   
     //--------------------------------------------------------------------------------------
-    specify("Sign up startup with API", () => {
+    specify("Sign up startup plan with API", () => {
       signUpPage.clickStartUpPlan();
       signUpPage.verifyURLCreateYourAccountPage();
       signUpPage.fillAllInfoAccount();
@@ -23,8 +23,25 @@ describe("Sign up ", () => {
       signUpPage.verifyURLCreateYourOranigationPage();
       signUpPage.fillInCompanyNameAndCompanyURL();
       signUpPage.clickContinueButton();
+      signUpPage.verifyStartUpPlanBilling();
       signUpPage.clickAPIStartUpBox();
       signUpPage.fillInAllInfoPayMent();
       signUpPage.clickStartTrialButton();
+      signUpPage.verifyUserInfo();
+    });
+
+    specify("Sign up free plan with API", () => {
+      signUpPage.clickFreePlan();
+      signUpPage.verifyURLCreateYourAccountPage();
+      signUpPage.fillAllInfoAccount();
+      signUpPage.clickCreateAccountButton();
+      signUpPage.verifyURLCreateYourOranigationPage();
+      signUpPage.fillInCompanyNameAndCompanyURL();
+      signUpPage.clickContinueButton();
+      signUpPage.verifyStartUpPlanBilling();
+      signUpPage.clickAPIStartUpBox();
+      signUpPage.fillInAllInfoPayMent();
+      signUpPage.clickStartTrialButton();
+      signUpPage.verifyUserInfo();
     });
   });

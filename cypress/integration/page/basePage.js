@@ -2,7 +2,6 @@ Cypress.on("uncaught:exception", (err, runnable) => {
     return false;
   });
   
-  
 class BasePage {
     clickElement(elementLocator) {
       cy.get(elementLocator).click({ multiple: true, force: true });
@@ -19,20 +18,13 @@ class BasePage {
     }
 
     sendKeyLocatorInIframe(iframe, locator, key){
-      // cy.get(iframe).then($a =>{
-      //   cy.log($a.contents())
-      // })
-      cy
-      .get(iframe)
-      .should(iframe => expect(iframe.contents().find('body').to.exist)
-      .then(iframe => cy.wrap(iframe.contents().find('body')))
-      .within({}, $iframe => {
-        cy.get(locator).type(key)
-      }))
-      // var iframe = document.getElementById(iframe);
-      // var elmnt = iframe.contentWindow.document.get(locator);
-      // elmnt.type(key)
-  }
+      cy.get(iframe).then($iframe => {
+
+        const iframe = $iframe.contents();
+        const myInput = iframe.find(locator)
+        cy.wrap(myInput).type(key,{force: true});
+      });
+      }
   
     verifyIncludeUrl(url) {
       expect(cy.url().should("include", url));
@@ -43,11 +35,11 @@ class BasePage {
     }
   
     verifyElementVisibleByString(string) {
-      expect(cy.contains(string, {timeout: 20000}).should("be.visible"));
+      expect(cy.contains(string, {timeout: 15000}).should("be.visible"));
     }
   
     verifyElementVisibleByLocator(locator) {
-      expect(cy.get(locator).should("be.visible"));
+      expect(cy.get(locator, {timeout: 15000}).should("be.visible"));
     }
 
     stringRandom(text){
@@ -71,7 +63,8 @@ class BasePage {
       var date = new Date();
       date.setMonth(date.getMonth() + 2);
       let prevExpiryDate = (date.getMonth() + 1)+ "/"  + (date.getFullYear())
-      return prevExpiryDate
+      let expiry = prevExpiryDate.substring(0,2)+ prevExpiryDate.substring(5,7)
+      return expiry
     }
 
     countLenghtLocator(locator){

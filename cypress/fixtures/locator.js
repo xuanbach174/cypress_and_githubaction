@@ -1,5 +1,6 @@
 class locator {
     static selectPlanStartup = ":nth-child(2) > .box-boundary-6qw > .overview > .btn-control-6qw > button"
+    static selectFeePlan = ":nth-child(1) > .box-boundary-6qw > .overview > .btn-control-6qw > button"
 
     static firstNameField = ":nth-child(1) > .label-input > input"
     static lastNameField = ":nth-child(2) > .label-input > input"
@@ -26,12 +27,16 @@ class locator {
     static zipCodeField =":nth-child(7) > .label-input > input"
     static phoneNumberField ="input[placeholder='Phone Number']"
     static nameOnCardField =".payment-method > :nth-child(2) > .label-input > input"
-    static cardNumberIframe = "#card-number iframe"
-    static creditCardNumber = "#card-number input[class='__PrivateStripeElement-input']"
-    static cvvField = "#card-cvv input"
-    static expiryField = '#card-expiry input'
+    static cardNumberIframe = "#card-number > div > iframe"
+    static creditCardNumber = "#root > form > span:nth-child(4) > div > div.CardNumberField-input-wrapper > span > input"
+    static expiryIframe = "#card-expiry > div > iframe"
+    static cvviframe = "#card-cvv > div > iframe"
+    static cvvField = "#root > form > span:nth-child(4) > span > input[name='cvc']"
+    static expiryField = "#root > form > span:nth-child(4) > span > input[name='exp-date']"
     static postalCodeField = ":nth-child(2) > .basic-input-3fv input"
     static startTrialButton = 'div.btn-control-6qw > button'
+
+    static userInfo = 'div[class="user-info"]'
 }
 
 export default locator;

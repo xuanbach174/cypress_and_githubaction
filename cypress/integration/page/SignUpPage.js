@@ -1,6 +1,7 @@
 import BasePage from "./basePage";
 import locator from "../../fixtures/locator"
 import contanst from "../../fixtures/contanst.json"
+import "../../support/commands.js"
 
 class SignUpPage extends BasePage {
 
@@ -10,6 +11,10 @@ class SignUpPage extends BasePage {
     
     clickStartUpPlan(){
         this.clickElement(locator.selectPlanStartup);
+    }
+
+    clickFreePlan(){
+        this.clickElement(locator.selectFeePlan);
     }
     // Create account ===============================
     fillFirstName(){
@@ -101,17 +106,18 @@ class SignUpPage extends BasePage {
     }
     
     fillInCreditCardNumberField(){
-        this.sendKeyLocator(
-            locator.creditCardNumber,parseInt(contanst.creditCardNumber))
+        this.sendKeyLocatorInIframe(locator.cardNumberIframe,
+            locator.creditCardNumber, contanst.creditCardNumber)
     }
 
     fillInCvvField(){
-        this.sendKeyLocator(locator.cvvField, this.indexRandom(3))
+        this.sendKeyLocatorInIframe(locator.cvviframe,
+            locator.cvvField, this.indexRandom(3))
     }
 
     fillInExpiryField(){
-        this.clickElement(locator.expiryField)
-        this.sendKeyLocator(locator.expiryField, this.getExpiryDate())
+        this.sendKeyLocatorInIframe(locator.expiryIframe,
+            locator.expiryField, this.getExpiryDate())
     }
 
     fillInPostalCodeField(){
@@ -143,18 +149,20 @@ class SignUpPage extends BasePage {
     }
 
     verifyURLCreateYourAccountPage(){
-        this.verifyIncludeUrl(contanst.URLCreateYourAccount)
+        this.verifyElementVisibleByString(contanst.CreateYourAccount)
     }
 
     verifyURLCreateYourOranigationPage(){
         this.verifyElementVisibleByString(contanst.organizationTitle)
-        this.verifyIncludeUrl(contanst.URLCreateYourOranigation)
     }
 
     verifyStartUpPlanBilling(){
-        this.verifyElementVisibleByString(locator.planBillingTitle)
+        this.verifyElementVisibleByString(contanst.planBillingTitle)
     }
 
+    verifyUserInfo(){
+        this.verifyElementVisibleByLocator(locator.userInfo)
+    }
 
     
 }
