@@ -14,9 +14,10 @@ jobs:
 
       - name: Cypress run
         uses: cypress-io/github-action@v2
-        with: 
-          spec: cypress/integration/Test/SignUp.spec.js
+        with:
           browser: chrome
+          headless: true
+          spec: cypress/integration/Test/SignUp.spec.js
           record: true
         env:
           # pass the Dashboard record key as an environment variable
