@@ -15,7 +15,7 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v2
         with: 
-          spec: cypress/integration/SignUp.spec.js
+          spec: cypress/integration/Test/SignUp.spec.js
         with:
           record: true
         env:

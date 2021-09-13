@@ -3,10 +3,6 @@
 import SignUpPage from "../page/SignUpPage";
 import contanst from "../../fixtures/contanst.json"
 
-// Cypress.on("uncaught:exception", (err, runnable) => {
-//   return false;
-// });
-
 beforeEach(() => {
   cy.visit(contanst.URL);
 });
