@@ -18,12 +18,12 @@ class SignUpPage extends BasePage {
     }
     // Create account ===============================
     fillFirstName(){
-        let firstName = this.stringRandom("dao")
+        let firstName = this.stringRandom("Dao")
         this.sendKeyLocator(locator.firstNameField, firstName);
     }
 
     fillLastName(){
-        let lastName = this.stringRandom("nghia")
+        let lastName = this.stringRandom("Ghia")
         this.sendKeyLocator(locator.lastNameField, lastName);
     }
 
