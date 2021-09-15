@@ -10,7 +10,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
         with:
-            ref: nghia
+            ref: main
         
       - name: Cypress run
         uses: cypress-io/github-action@v2
